@@ -73,12 +73,12 @@ if __name__ == '__main__':
     print "[!!] (%s)" % fetch(
         "http://ifconfig.me/ip",
         agent="Spoofed-Agent",
-        level=1
+        debuglevel=1
     ).strip()
 
     print "\n[+] Using TOR Network"
     print "[!!] (%s)" % fetch(
         "http://ifconfig.me/ip",
         tor=True,
-        timeout=6
+        timeout=10
     ).strip()
